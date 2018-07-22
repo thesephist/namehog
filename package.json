@@ -1,0 +1,13 @@
+{
+  "name": "namehog",
+  "version": "1.0.0",
+  "description": "A minimal command-line tool to check if a username is available on Twitter",
+  "main": "index.js",
+  "repository": "https://github.com/thesephist/namehog.git",
+  "author": "Linus Lee <linus@thesephist.com>",
+  "license": "MIT",
+  "bin": {
+    "namehog": "./bin/namehog.js"
+  },
+  "preferGlobal": true
+}
