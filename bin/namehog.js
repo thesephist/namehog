@@ -19,7 +19,7 @@ cliOptions.usernameValue = cliArguments[0];
 // Main process, wrapped in an IIFE because of top-level await calls
 (async function () {
 
-    if (cliOptions.usernameValue !== null) {
+    if (typeof cliOptions.usernameValue === 'string') {
         try {
             const usernameAvailable = await validate(cliOptions.usernameValue);
             const { valid, message } = usernameAvailable;
